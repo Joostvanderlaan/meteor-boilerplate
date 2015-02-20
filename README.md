@@ -37,6 +37,28 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
 
 ## <a name="installation"></a> Installation
 
+
+
+
+## Quick Start with Docker
+[Docker functionality added by using the Meteor Docker Passenger repo](https://github.com/Joostvanderlaan/meteor-docker-passenger)
+
+```shell
+docker run -d \
+    -e ROOT_URL=http://yourapp.com \
+    -e MONGO_URL=mongodb://url \
+    -e MONGO_OPLOG_URL=mongodb://oplog_url \
+    -v /dir_containing_bundledir:/home/app/webapp \
+    -p 80:80 \
+    joostlaan/meteor-docker-passenger
+```
+
+
+
+
+
+
+
 1. Clone this repo to `<yourapp>`
 
   `git clone https://github.com/Differential/meteor-boilerplate.git <yourapp>`
